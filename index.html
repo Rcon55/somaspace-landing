@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SomaSpace</title>
+  <meta name="description" content="SomaSpace — платформа поддержки команд: поддержка сотрудников, командное развитие и мониторинг состояния.">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="https://somaspace.ru/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://somaspace.ru/">
+  <meta property="og:title" content="SomaSpace">
+  <meta property="og:description" content="Платформа поддержки команд">
+  <meta property="og:image" content="assets/img/hero-bg.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-bg.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#platform">Перейти к содержанию</a>
+
+  <!-- Фиксированная шапка: появляется на десктопе после первого экрана -->
+  <header class="topbar" data-topbar>
+    <div class="topbar__pill" aria-hidden="true"></div>
+    <div class="topbar__inner stage">
+      <a class="topbar__logo" href="#top" style="--x:60" aria-label="SomaSpace — наверх">
+        <img src="assets/img/logo-mark.svg" alt="" width="34" height="34">
+      </a>
+      <nav class="topbar__nav" aria-label="Основное меню">
+        <a class="nav-link" href="#platform" style="--x:197" data-nav>платформа</a>
+        <a class="nav-link" href="#products" style="--x:616" data-nav>продукты</a>
+        <a class="nav-link" href="#events" style="--x:924" data-nav>мероприятия</a>
+      </nav>
+      <a class="btn btn--sm topbar__login" href="https://somaspace.ru/app/signin" style="--x:1148">войти</a>
+    </div>
+  </header>
+
+  <!-- Плавающие соцсети (десктоп) -->
+  <div class="floating-socials">
+    <a class="social" href="https://t.me/somaspace_tg" target="_blank" rel="noopener" aria-label="Telegram">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#icon-telegram"/></svg>
+    </a>
+    <a class="social" href="https://dzen.ru/somaspace" target="_blank" rel="noopener" aria-label="Дзен">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#icon-dzen"/></svg>
+    </a>
+  </div>
+
+  <main>
+    <!-- ===== Первый экран ===== -->
+    <section class="hero" id="top">
+      <img class="hero__bg" src="assets/img/hero-bg.webp" alt="" width="1680" height="981" fetchpriority="high" data-parallax="0.5" data-parallax-from="0" data-parallax-mobile>
+      <div class="hero__band"></div>
+      <img class="hero__frame" src="assets/img/hero-frame.svg" alt="" width="1126" height="913">
+
+      <h1 class="visually-hidden">SomaSpace — платформа поддержки команд</h1>
+
+      <!-- мобильная шапка -->
+      <div class="hero__mobile-bar">
+        <div class="hero__socials">
+          <a class="social" href="https://t.me/somaspace_tg" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#icon-telegram"/></svg>
+          </a>
+          <a class="social" href="https://dzen.ru/somaspace" target="_blank" rel="noopener" aria-label="Дзен">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#icon-dzen"/></svg>
+          </a>
+        </div>
+        <a class="btn" href="https://somaspace.ru/app/signin">войти</a>
+      </div>
+      <img class="hero__logo-mobile" src="assets/img/logo-stacked-dark.svg" alt="" width="989" height="476">
+
+      <div class="hero__stage stage">
+        <nav class="hero__nav" aria-label="Основное меню">
+          <a class="nav-link" href="#platform" style="--x:202; --y:31">платформа</a>
+          <a class="nav-link" href="#products" style="--x:618; --y:31">продукты</a>
+          <a class="nav-link" href="#events" style="--x:923; --y:31">мероприятия</a>
+        </nav>
+        <a class="btn hero__login" href="https://somaspace.ru/app/signin" style="--x:1126; --y:25">войти</a>
+
+        <p class="hero__vertical" style="--x:23; --y:328" data-drift="0.26" data-drift-max="407">somaspace //</p>
+        <a class="btn hero__contact" href="#contact" style="--x:79; --y:580" data-drift="1" data-drift-max="340">связаться</a>
+        <p class="hero__tagline" style="--x:733; --y:677; --w:167; --mx:214; --my:319; --mw:143" data-drift="-0.22" data-drift-max="360">культура здоровых командных процессов</p>
+      </div>
+    </section>
+
+    <!-- ===== Платформа ===== -->
+    <section class="about" id="platform">
+      <div class="about__stage stage">
+        <h2 class="title-xl about__title" style="--x:197.5; --y:100; --w:885" data-reveal>люди и&nbsp;процессы —<br>одна система</h2>
+
+        <img class="photo about__desk" src="assets/img/photo-desk.webp" alt="" width="600" height="448" loading="lazy"
+             style="--x:273; --y:388; --w:409; --h:276">
+        <p class="caps about__text1" style="--x:743; --y:459; --w:279" data-reveal>Состояние людей и&nbsp;устройство работы связаны: налаженные процессы держат людей, а&nbsp;люди в&nbsp;порядке держат процессы. Поэтому мы&nbsp; не&nbsp;выбираем одну сторону —&nbsp;мы&nbsp;помогаем сотрудникам и&nbsp;одновременно разбираемся в&nbsp;том, как устроена работа</p>
+
+        <img class="photo about__pen" src="assets/img/photo-pen.webp" alt="" width="556" height="336" loading="lazy"
+             style="--x:1060; --y:388; --w:164; --h:165" data-parallax="-0.2">
+        <img class="photo about__cuff" src="assets/img/photo-cuff.webp" alt="" width="600" height="448" loading="lazy"
+             style="--x:60; --y:795; --w:162; --h:197" data-pin="490" data-pin-offset="250">
+
+        <p class="caps about__text2" style="--x:320; --y:844; --w:272" data-reveal>SomaSpace — платформа поддержки команд</p>
+        <p class="caps about__text3" style="--x:320; --y:912; --w:280" data-reveal>Мы смотрим на&nbsp;команду целиком: как&nbsp;принимаются решения, как люди договариваются и&nbsp;в&nbsp;каком состоянии работают</p>
+
+        <img class="photo about__portrait" src="assets/img/photo-portrait.webp" alt="" width="614" height="614" loading="lazy"
+             style="--x:681; --y:754; --w:332; --h:473">
+        <p class="caps about__text4" style="--x:453; --y:1418; --w:563" data-reveal>Поддержка — это не&nbsp;только разбор трудностей, но&nbsp;и&nbsp;развитие. Групповые сессии и&nbsp;обучающие курсы дают команде общие навыки: как&nbsp;договариваться, как&nbsp;принимать решения, как&nbsp;говорить о&nbsp;сложном. Навык, освоенный вместе, остаётся в&nbsp;работе.</p>
+
+        <p class="lead about__summary" style="--x:490; --y:1698; --w:300" data-reveal>всё это мы собрали на&nbsp;одной платформе</p>
+        <span class="about__line" style="--x:640; --y:1844" data-grow aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <!-- ===== Продукты ===== -->
+    <section class="products" id="products" aria-label="Продукты">
+      <div class="cards">
+        <article class="card card--1">
+          <p class="card__num">01</p>
+          <h3 class="card__title">поддержка сотрудников</h3>
+          <p class="card__text">Помогаем с&nbsp;конкретными запросами или формируем новые навыки. Форматы разные: персональные встречи, групповые занятия, парная медиация и&nbsp;обучающие курсы. Психологи работают с&nbsp;одним практическим вопросом —&nbsp;простой и&nbsp;понятный формат</p>
+        </article>
+        <article class="card card--2">
+          <p class="card__num">02</p>
+          <h3 class="card__title">командное развитие</h3>
+          <p class="card__text">Анализируем процессы в&nbsp;компании и&nbsp;находим то, что&nbsp;мешает эффективной работе. Набор услуг зависит от&nbsp;результатов диагностики —&nbsp;решение собирается под&nbsp;вашу компанию. Вместе составляем план работы, оцениваем эффект и&nbsp;сопровождаем в&nbsp;необходимый для&nbsp;закрепления результата срок</p>
+        </article>
+        <article class="card card--3">
+          <p class="card__num">03</p>
+          <h3 class="card__title">мониторинг состояния</h3>
+          <p class="card__text">Работа с&nbsp;командой идёт этапами, а&nbsp;состояние людей меняется постоянно. Регулярные анонимные опросы дают спокойный способ это&nbsp;видеть: вопросы по&nbsp;графику, отчёт по&nbsp;команде, ответы без&nbsp;привязки к&nbsp;человеку. Так&nbsp;решения опираются на&nbsp;динамику, а&nbsp;не&nbsp;на&nbsp;догадки.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Решения ===== -->
+    <section class="solutions" id="solutions">
+      <div class="solutions__stage stage">
+        <h2 class="title-xl solutions__title" style="--x:197.5; --y:100; --w:885; --mx:21.5; --my:24; --mw:317" data-reveal>одна платформа —<br>четыре решения:</h2>
+
+        <img class="solutions__curve solutions__curve--desktop" src="assets/img/curve-desktop.svg" alt="" width="1408" height="696" loading="lazy">
+        <img class="solutions__curve solutions__curve--mobile" src="assets/img/curve-mobile.svg" alt="" width="346" height="821" loading="lazy">
+
+        <span class="dot" style="--x:297; --y:353; --mx:183; --my:181" data-reveal aria-hidden="true">1</span>
+        <span class="dot" style="--x:141; --y:693; --mx:127; --my:447" data-reveal aria-hidden="true">2</span>
+        <span class="dot" style="--x:768; --y:629; --mx:216; --my:637" data-reveal aria-hidden="true">3</span>
+        <span class="dot" style="--x:748; --y:977; --mx:95;  --my:942" data-reveal aria-hidden="true">4</span>
+
+        <div class="solution" style="--x:360; --y:355; --w:300; --mx:10;  --my:224; --mw:300; --mtw:224" data-reveal>
+          <h3 class="solution__title">понятные и&nbsp;эффективные процессы</h3>
+          <p class="solution__text">помогаем сделать рабочие процессы понятными и&nbsp;прозрачными — и&nbsp;для&nbsp;руководителей, и&nbsp;для&nbsp;сотрудников. Каждый видит, как устроена работа и&nbsp;какой будет следующий шаг. Так&nbsp;процессы держатся на&nbsp;правилах, а&nbsp;не&nbsp;на&nbsp;отдельных людях</p>
+        </div>
+        <div class="solution" style="--x:155; --y:753; --w:313; --mx:173; --my:450; --mw:180; --mtw:202" data-reveal>
+          <h3 class="solution__title">конфликты без&nbsp;потерь</h3>
+          <p class="solution__text">помогаем разбирать рабочие конфликты&nbsp;— в&nbsp;отношениях и&nbsp;в&nbsp;процессах. Стороны переходят от&nbsp;претензий к&nbsp;понятным договорённостям. Так&nbsp;команда не&nbsp;теряет людей и&nbsp;не&nbsp;снижает эффективность</p>
+        </div>
+        <div class="solution" style="--x:836; --y:633; --w:300; --mx:20;  --my:657; --mw:230; --mtw:210" data-reveal>
+          <h3 class="solution__title">эмоциональная устойчивость</h3>
+          <p class="solution__text">помогаем сотрудникам не&nbsp;оставаться один на&nbsp;один с&nbsp;нагрузкой и&nbsp;личными трудностями. Личное и&nbsp;командное влияют&nbsp;друг на&nbsp;друга: состояние человека отзывается в&nbsp;работе, напряжение в&nbsp;команде — в&nbsp;человеке. Помогаем справиться с&nbsp;эмоциями и&nbsp;не&nbsp;выпадать из&nbsp;привычного ритма</p>
+        </div>
+        <div class="solution" style="--x:758; --y:1039; --w:300; --mx:136; --my:944; --mw:214; --mtw:213" data-reveal>
+          <h3 class="solution__title">сопровождение в&nbsp;изменениях</h3>
+          <p class="solution__text">помогаем компаниям пройти этап трансформации. Когда&nbsp;привычный порядок меняется, людям важно понимать, куда&nbsp;они&nbsp;движутся и&nbsp;что&nbsp;будет дальше. Так изменения закрепляются в&nbsp;работе, а&nbsp;не остаются решениями на&nbsp;бумаге</p>
+        </div>
+
+        <a class="btn solutions__contact" href="#contact" style="--x:588; --y:1315; --mx:129; --my:1175">связаться</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <ul class="footer__contacts">
+        <li><a href="https://t.me/somaspace_tg" target="_blank" rel="noopener">tg</a></li>
+        <li><a href="tel:+79090764545">+7 (909) 076-45-45</a></li>
+        <li><a href="mailto:contact@somaspace.ru">contact@somaspace.ru</a></li>
+      </ul>
+      <nav class="footer__legal" aria-label="Документы">
+        <a href="eula/">условия использования</a>
+        <a href="pdn_policy/">политика конфиденциальности</a>
+        <a href="consent_pnd/">согласие на&nbsp;обработку персональных данных</a>
+        <a href="payment/">условия оплаты</a>
+      </nav>
+      <picture class="footer__logo">
+        <source media="(min-width: 1024px)" srcset="assets/img/logo-wide-light.svg">
+        <img src="assets/img/logo-stacked-light.svg" alt="SomaSpace" width="988" height="482">
+      </picture>
+      <p class="footer__note">©&nbsp;2026&nbsp;SomaSpace. Не&nbsp;является медицинской услугой.<br>В&nbsp;экстренных ситуациях обращайтесь к&nbsp;профильным службам</p>
+      <p class="footer__note footer__company">ООО «Сома Спейс»,<br>ОГРН 1257200015401, ИНН 7203598692<br>625002, г. Тюмень,<br>ул. Циолковского, д. 7, к. 2, кв. 96</p>
+    </div>
+  </footer>
+
+  <!-- ===== Попап «связаться» ===== -->
+  <dialog class="modal" id="contact-modal" aria-labelledby="contact-title">
+    <button class="modal__close" type="button" aria-label="Закрыть" data-close>
+      <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 2l18 18M20 2L2 20"/></svg>
+    </button>
+    <h2 class="modal__title" id="contact-title">заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;вами</h2>
+    <form class="form" id="contact-form" novalidate>
+      <label class="field">
+        <span class="visually-hidden">ФИО</span>
+        <input type="text" name="name" placeholder="ФИО" autocomplete="name" required>
+        <span class="field__error" data-error="Неверно указано ФИО"></span>
+      </label>
+      <label class="field">
+        <span class="visually-hidden">ИНН компании</span>
+        <input type="text" name="inn" placeholder="ИНН компании" inputmode="numeric" maxlength="12">
+        <span class="field__error"></span>
+      </label>
+      <label class="field field--phone">
+        <span class="visually-hidden">Телефон</span>
+        <span class="field__prefix" aria-hidden="true">+7</span>
+        <input type="tel" name="phone" placeholder="(000) 000-00-00" autocomplete="tel-national" data-phone-mask>
+        <span class="field__error" data-error="Неверно указан номер телефона"></span>
+      </label>
+      <label class="field">
+        <span class="visually-hidden">E-mail</span>
+        <input type="email" name="email" placeholder="E-mail" autocomplete="email">
+        <span class="field__error" data-error="Неверно указан e-mail"></span>
+      </label>
+      <!-- скрытое поле-ловушка для спам-ботов -->
+      <input class="visually-hidden" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn btn--form" type="submit">отправить</button>
+      <p class="form__status" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <!-- ===== Cookie-баннер ===== -->
+  <div class="cookie" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" hidden>
+    <div class="cookie__main">
+      <p class="cookie__title" id="cookie-title">Мы используем cookie</p>
+      <p class="cookie__text">Мы используем обязательные cookie для работы сервиса. Дополнительные cookie помогают улучшать опыт использования. Вы можете настроить их или принять все. <a href="cookie_policy/">Политика cookie</a></p>
+      <div class="cookie__buttons">
+        <button class="cookie__btn cookie__btn--primary" type="button" data-cookie="accept">принять</button>
+        <button class="cookie__btn cookie__btn--outline" type="button" data-cookie="reject">отклонить все</button>
+        <button class="cookie__btn cookie__btn--text" type="button" data-cookie="settings">настроить</button>
+      </div>
+    </div>
+    <form class="cookie__settings" hidden>
+      <button class="cookie__back" type="button" data-cookie="back">
+        <svg viewBox="0 0 19 14" aria-hidden="true"><path d="M18 7H2M7.5 1.5 2 7l5.5 5.5"/></svg>
+        настройки cookie
+      </button>
+      <p class="cookie__text">Cookie, необходимые для корректной работы сайта, включены всегда. Остальные можно настроить.</p>
+      <div class="cookie__option">
+        <div><p class="cookie__option-title">обязательные cookies</p><p class="cookie__option-text">Необходимы для работы сервиса. Не&nbsp;могут быть отключены</p></div>
+        <input class="toggle" type="checkbox" checked disabled aria-label="Обязательные cookies">
+      </div>
+      <div class="cookie__option">
+        <div><p class="cookie__option-title">аналитические cookies</p><p class="cookie__option-text">Запоминают ваши настройки и&nbsp;предпочтения интерфейса.</p></div>
+        <input class="toggle" type="checkbox" name="analytics" aria-label="Аналитические cookies">
+      </div>
+      <div class="cookie__option">
+        <div><p class="cookie__option-title">рекламные cookies</p><p class="cookie__option-text">Используются для показа персонализированной рекламы.</p></div>
+        <input class="toggle" type="checkbox" name="marketing" aria-label="Рекламные cookies">
+      </div>
+      <button class="cookie__btn cookie__btn--primary" type="submit">сохранить</button>
+    </form>
+  </div>
+
+  <!-- Иконки -->
+  <svg class="visually-hidden" aria-hidden="true">
+    <symbol id="icon-telegram" viewBox="0 0 40 40">
+      <circle class="social__bg" cx="20" cy="20" r="20"/>
+      <path class="social__fg" d="M28.72 10.98 25.15 29.92s-.5 1.31-1.87.68l-8.24-6.65c1.11-1.05 9.74-9.2 10.11-9.57.59-.58.22-.92-.45-.48l-12.74 8.51L7 20.65s-.77-.29-.85-.92c-.07-.63.88-.97.88-.97l20.04-8.27s1.65-.76 1.65.5Z"/>
+    </symbol>
+    <symbol id="icon-dzen" viewBox="0 0 40 40">
+      <circle class="social__bg" cx="20" cy="20" r="20"/>
+      <path class="social__fg" d="M40 20.21v-.42c-8.86-.29-12.9-.5-16.14-3.65-3.15-3.24-3.37-7.28-3.65-16.14h-.43c-.29 8.86-.5 12.9-3.64 16.14C12.9 19.29 8.86 19.51 0 19.79v.42c8.86.29 12.9.5 16.14 3.65 3.14 3.24 3.36 7.28 3.64 16.14h.43c.29-8.86.5-12.9 3.65-16.14 3.24-3.15 7.28-3.36 16.14-3.65Z"/>
+    </symbol>
+  </svg>
+</body>
+</html>

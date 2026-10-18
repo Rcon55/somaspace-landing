@@ -1,0 +1,78 @@
+/* Юридические страницы: шапка с кнопкой «назад» и текст документа */
+
+.legal-header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9rem;
+  padding: 0 2rem 0 3rem;
+}
+
+.legal-header__logo img { width: 3.5rem; height: auto; }
+
+.legal-header__back {
+  display: grid;
+  place-items: center;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  background: var(--ink);
+  transition: opacity .2s;
+}
+.legal-header__back:hover { opacity: .8; }
+.legal-header__back svg { width: 2.2rem; height: 1.9rem; fill: none; stroke: var(--white); stroke-width: 1.4; }
+
+.legal-header__pill { display: none; }
+
+@media (min-width: 1024px) {
+  .legal-header {
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 128rem;
+    margin-inline: auto;
+    padding: 0 0 0 6rem;
+  }
+
+  /* полупрозрачная «пилюля» под логотипом и кнопкой */
+  .legal-header__pill {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 1.1rem;
+    left: 4.5rem;
+    width: 12rem;
+    height: 6.8rem;
+    border-radius: 10rem;
+    background: rgba(238, 238, 238, .4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.legal-content {
+  min-height: 40vh;
+  padding: 10rem 0 6rem;
+}
+
+#legal-root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+}
+#legal-root h1 { margin: 0 0 1.5rem; font-size: 1.75em; line-height: 1.2; }
+#legal-root h2 { margin: 2em 0 1em; font-size: 1.25em; line-height: 1.3; }
+#legal-root p, #legal-root ul, #legal-root ol { margin: 0 0 1em; }
+#legal-root ul, #legal-root ol { padding-left: 1.5em; }
+#legal-root ul { list-style: disc; }
+#legal-root a { text-decoration: underline; }
+#legal-root table { width: 100%; border-collapse: collapse; font-size: .85em; }
+#legal-root th, #legal-root td { padding: .45rem .55rem; border: 1px solid #d8d8d8; vertical-align: top; }
